@@ -1,0 +1,62 @@
+button {
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  transition: all 300ms;
+  cursor: pointer;
+}
+
+button[disabled] {
+  cursor: not-allowed;
+  background-color: gray !important;
+}
+
+button#iniciar {
+  background-color: #30f03f;
+}
+
+button#iniciar:hover {
+  background-color: #009500;
+}
+
+button#parar {
+  background-color: #f0303f;
+}
+
+button#parar:hover {
+  background-color: #950000;
+}
+
+select {
+  border: none;
+  padding: 1rem;
+  background-color: lightgray;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+video {
+  width: 50vw;
+  /* Para espelhar a câmera */
+  /*   transform: scaleX(-1); */
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: lightgray;
+  text-align: center;
+  padding: 0.5rem 0;
+  color: white;
+}
+
+@media (max-width: 760px) {
+  video {
+    width: 100%;
+    max-height: 100%;
+  }
+}
