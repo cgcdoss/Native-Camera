@@ -38,8 +38,8 @@ async function setNomeCamera(camera) {
 }
 
 async function solicitarPermissao() {
-  const s = await navigator.mediaDevices.getUserMedia({ audio: true, video: true });
-  s.getTracks().forEach(t => t.stop());
+  const mediaStream = await navigator.mediaDevices.getUserMedia({ audio: true, video: true });
+  mediaStream.getTracks().forEach(t => t.stop());
 }
 
 async function initCamera(idCamera = videoSelect.value) {
